@@ -1,0 +1,82 @@
+body{
+  font-family: "Lucida Sans Unicode", "Lucida Console", "Courier New";
+  color:white;
+  background-color: #1d1f21;
+}
+
+a{
+  color:inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@media(min-width:1024px){
+  #sidebar{
+    flex-basis: 20%;
+    text-align: justify;
+    margin:2%;
+    height: 100%;
+  }
+
+  #terminal{
+    flex-basis: 72%;
+    flex-direction: row;
+    margin-top:2%;
+    margin-right: 2%;
+  }
+}
+
+#profile{
+  max-width: 100%;
+}
+
+#intro{
+  color: #de935f;
+  text-align: justify;
+}
+
+#prompt{
+  float:left;
+  width:auto;
+  font-size: 22px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background-color: #1d1f21;
+  color: #f0c674;
+  border: none;
+}
+
+#txtBox{
+  float:left;
+  width:auto;
+  font-size: 22px;
+  vertical-align: middle;
+  background-color: #1d1f21;
+  color: #b5bd68;
+  border: none;
+  box-sizing: border-box;
+}
+
+#Copyright{
+  color: #373b41;
+  margin:2%;
+}
+
+#injected{
+  font-size: 22px;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Console", "Courier New";
+  text-align: justify;
+  margin-top:2%;
+}
+
+#sidebar h1{
+  color: #58d49f;
+}
