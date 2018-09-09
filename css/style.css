@@ -1,5 +1,5 @@
 body{
-  font-family: "Lucida Sans Unicode", "Lucida Console", "Courier New";
+  font-family: "Lucida Console", "Lucida Sans Unicode", "Courier New";
   color:white;
   background-color: #1d1f21;
 }
@@ -10,18 +10,21 @@ a{
   text-decoration: inherit;
 }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+#sidebar{
+  margin: 5%;
+  margin-top: 0.5%;
+  text-align: justify;
+}
+
+#terminal{
+  margin:5%;
 }
 
 @media(min-width:1024px){
   #sidebar{
     flex-basis: 20%;
-    text-align: justify;
     margin:2%;
+    margin-top:0.5%;
     height: 100%;
   }
 
@@ -30,7 +33,25 @@ a{
     flex-direction: row;
     margin-top:2%;
     margin-right: 2%;
+    margin-left: auto;
+    margin-bottom: auto;
   }
+
+  body{
+      overflow-x:hidden;
+  }
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#sidebar h1{
+  color: #58d49f;
+  font-size: 52px;
 }
 
 #profile{
@@ -70,13 +91,24 @@ a{
 }
 
 #injected{
-  font-size: 22px;
+  font-size: 15px;
   color: white;
-  font-family: "Lucida Sans Unicode", "Lucida Console", "Courier New";
   text-align: justify;
   margin-top:2%;
 }
 
-#sidebar h1{
-  color: #58d49f;
+#injected ul{
+  list-style: none;
+}
+
+#injected li, th, td {
+    padding-right: 45px;
+    padding-left: 25px;
+    padding-top: 7px;
+
+    text-align: left;
+}
+
+#userInput{
+  margin-top: 20px;
 }
